@@ -1,0 +1,36 @@
+# frozen_string_literal: true
+
+require './app/init'
+require './app/models/task'
+require './app/services/api/get_session_and_tasks_service'
+require './app/services/api/claim_service'
+
+module Jobs
+  class MainJob
+    class << self
+      def call
+        puts 'START ₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿'
+
+        data = Api::GetSessionAndTasksService.new.call
+        gained = 0
+        data[:tasks].each do |task|
+          next unless task.active?
+
+          puts "Run -> #{task.uuid}"
+          puts "Started? 🚀 -> #{task.started?}"
+          task.run
+          if task.pending_unlock?
+            puts 'Locked 🔒'
+          else
+            gained += Api::ClaimService.new(task).call
+          end
+          puts '₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿'
+        end
+
+        puts "You got #{gained} sats! 🤑" if gained.positive?
+        puts 'Made with 🐨 by https://github.com/KoalaSat'
+        puts 'LN⚡: koalasat@getalby.com'
+      end
+    end
+  end
+end

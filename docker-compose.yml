@@ -1,0 +1,10 @@
+
+version: "3.7"
+services:
+  likes4satsbot:
+    build: .
+    container_name: likes4satsbot
+    volumes:
+      - .:/opt/likes4satsbot
+    stdin_open: true
+    tty: true
