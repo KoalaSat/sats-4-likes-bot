@@ -1,5 +1,5 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/db3100f978a542d588f8ae9a4abf2d55)](https://www.codacy.com/gh/KoalaSat/sats-4-likes-bot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KoalaSat/sats-4-likes-bot&amp;utm_campaign=Badge_Grade)
-[![AGPL-3.0 license](https://img.shields.io/badge/license-AGPL--3.0-blue)](https://github.com/KoalaSat/sats-4-likes-bot/blob/main/LICENSE)
+[![MIT license](https://img.shields.io/badge/license-MIT-green)](https://github.com/KoalaSat/sats-4-likes-bot/blob/main/LICENSE)
 
 # Sats 4 Likes Bot
 
