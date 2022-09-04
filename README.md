@@ -3,7 +3,7 @@
 
 # Sats 4 Likes Bot
 
-This app is an automatic tasker and claimer for https://www.sats4likes.com. It has been build by reverse-engineering the app so it can review the list of tasks and automatically interact with the specific service API to complete the requested task. Once it's done, it claims to sats4likes the reward.
+This app is an automatic tasker and claimer for https://www.sats4likes.com. It has been built by reverse-engineering the app so it can review the list of tasks and automatically interact with the specific service API to complete the requested task. Once it's done, it claims to sats4likes the reward.
 
 ## Getting Started
 
