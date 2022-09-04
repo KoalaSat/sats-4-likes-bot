@@ -1,5 +1,7 @@
 # Sats 4 Likes Bot
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e3912b0d0e3f43de8e9bc481b98d50c8)](https://app.codacy.com/gh/KoalaSat/sats-4-likes-bot?utm_source=github.com&utm_medium=referral&utm_content=KoalaSat/sats-4-likes-bot&utm_campaign=Badge_Grade_Settings)
+
 This app is an automatic tasker and claimer for https://www.sats4likes.com. It has been build by reverse-engineering the app so it can review the list of tasks and automatically interact with the specific service API to complete the requested task. Once it's done, it claims to sats4likes the reward.
 
 ## Getting Started
