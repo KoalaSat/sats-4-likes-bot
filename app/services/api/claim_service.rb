@@ -53,10 +53,13 @@ module Api
     end
 
     def persist_claimed(response, task_uuid)
-      return unless response.body.include? 'task already done'
+      return unless response.body.include?('task already done') ||
+                    response.body.include?('fail') ||
+                    response_ok(response)
 
       already_claimed = Persist.new
       already_claimed[task_uuid] = true
+      already_claimed
     end
 
     def print_response(response)
