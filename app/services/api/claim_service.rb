@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'persist'
+
 require './app/init'
 require './app/models/session'
 require './app/models/task'
@@ -35,6 +37,7 @@ module Api
                                   tweetid: task.tweet_id
                                 })
 
+      persist_claimed(response, task.uuid)
       print_response(response)
       calculate_reward(response)
     end
@@ -47,6 +50,13 @@ module Api
       else
         0
       end
+    end
+
+    def persist_claimed(response, task_uuid)
+      return unless response.body.include? 'task already done'
+
+      already_claimed = Persist.new
+      already_claimed[task_uuid] = true
     end
 
     def print_response(response)

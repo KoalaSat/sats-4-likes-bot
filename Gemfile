@@ -10,6 +10,7 @@ gem 'eventmachine', '~> 1.2', '>= 1.2.7'
 gem 'faraday', '~> 2.5', '>= 2.5.2'
 gem 'faye-websocket', '~> 0.11.1'
 gem 'json', '~> 2.6', '>= 2.6.2'
+gem 'persist', '~> 1.0'
 gem 'twitter', '~> 7.0'
 gem 'whenever', '~> 1.0'
 

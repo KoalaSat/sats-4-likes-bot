@@ -1,3 +1,4 @@
 .git
 .bundle
+.db.pstore
 node_modules
