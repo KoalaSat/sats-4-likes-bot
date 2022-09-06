@@ -34,7 +34,7 @@ docker-compose up -d
 
 - [ ] ~~Integrationm with YouTube service~~ (YouTube blocks sats4likes app)
 - [ ] Detect when a task is done before claiming it to the API
-- [ ] Persist invalid tasks so they are not claimed again
+- [x] Persist invalid tasks so they are not claimed again
 - [ ] Integration with a node to claim channel requests 
 
 ------
