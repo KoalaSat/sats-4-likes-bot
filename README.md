@@ -40,3 +40,4 @@ docker-compose up -d
 ------
 
 Made with 🐨 by https://github.com/koalasat
+LN⚡: koalasat@getalby.com
