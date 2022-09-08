@@ -54,8 +54,7 @@ module Api
 
     def persist_claimed(response, task_uuid)
       return unless response.body.include?('task already done') ||
-                    response.body.include?('fail') ||
-                    response_ok(response)
+                    response.body.include?('fail')
 
       already_claimed = Persist.new
       already_claimed[task_uuid] = true
@@ -75,7 +74,7 @@ module Api
     end
 
     def response_ok(response)
-      response.body.include?('tl1') || response.body.include?('ok')
+      response.body.include?('ok')
     end
 
     def connection
