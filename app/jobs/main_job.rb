@@ -12,7 +12,7 @@ module Jobs
     class << self
       def call
         puts 'START ₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿₿'
-        
+
         already_claimed = Persist.new
         data = Api::GetSessionAndTasksService.new.call
         gained = 0

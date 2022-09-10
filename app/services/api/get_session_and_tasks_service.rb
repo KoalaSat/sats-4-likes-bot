@@ -10,7 +10,7 @@ require './app/models/task'
 
 module Api
   class GetSessionAndTasksService
-    WEBSOCKET_URL = 'wss://s-usc1b-nss-2156.firebaseio.com/.ws?v=5&ns=yunik2-1014b'
+    WEBSOCKET_URL = "wss://#{FIREBASE_WENSOCKET_SUBDOMAIN}.firebaseio.com/.ws?v=5&ns=yunik2-1014b"
     GOOGLE_URL = 'https://securetoken.googleapis.com/'
 
     def initialize
