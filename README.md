@@ -7,6 +7,7 @@ This app is an automatic tasker and claimer for https://www.sats4likes.com. It h
 
 ## Getting Started
 
+
 Go to `./app/init.rb`. Those are the tokens you need for running the app.
 
 I could have here a detailed description about how to obtain each of them, but where is the fun? Go and earn those sats :)
