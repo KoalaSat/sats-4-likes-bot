@@ -32,6 +32,7 @@ docker-compose up -d
 
 ## Some Features to Work On
 
+- [ ] Integrationm with Telegram service
 - [ ] ~~Integrationm with YouTube service~~ (YouTube blocks sats4likes app)
 - [ ] Detect when a task is done before claiming it to the API
 - [x] Persist invalid tasks so they are not claimed again
