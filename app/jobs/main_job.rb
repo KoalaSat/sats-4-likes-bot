@@ -32,7 +32,6 @@ module Jobs
 
         puts "You got #{gained} sats! 🤑" if gained.positive?
         puts 'Made with 🐨 by https://github.com/KoalaSat'
-        puts 'LN⚡: koalasat@getalby.com'
       end
     end
   end
