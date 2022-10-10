@@ -18,6 +18,6 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.4'
   gem 'rubocop', '~> 1.36'
-  gem 'rubocop-performance', '~> 1.14', '>= 1.14.3'
+  gem 'rubocop-performance', '~> 1.15'
   gem 'rubocop-rake', '~> 0.6.0'
 end
