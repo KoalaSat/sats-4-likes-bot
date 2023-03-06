@@ -17,7 +17,7 @@ gem 'whenever', '~> 1.0'
 group :development, :test do
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.4'
-  gem 'rubocop', '~> 1.39'
+  gem 'rubocop', '~> 1.47'
   gem 'rubocop-performance', '~> 1.15'
   gem 'rubocop-rake', '~> 0.6.0'
 end
